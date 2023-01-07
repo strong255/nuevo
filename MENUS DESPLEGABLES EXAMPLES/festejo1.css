@@ -1,0 +1,494 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	margin: 5px;
+}
+
+
+img{
+	width: 140px;
+	height: 105px;
+
+}
+
+
+/*checked de menus*/
+
+ .input1:checked + .menu_container{
+
+ 	display: none;
+ }
+
+
+
+ .input_home:checked + .caja_inicio{
+	display: none;
+	
+}
+
+.input_servicio:checked + .caja_servicio{
+
+	display: none;
+	
+}
+
+
+.input_portafolio:checked + .caja_portafolio{
+
+	display: none;
+}
+
+.input_contacto:checked + .caja_contacto {
+	display: none;
+}
+
+	/*------------------------------*/
+
+.input1, .input_home, .input_servicio, .input_portafolio, .input_contacto{
+	display: none;
+
+}
+
+
+
+
+
+
+.principal{
+ width: 100%;
+ height: 105px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr) ;
+grid-template-rows:1fr 1fr 1fr ;
+grid-column-gap: auto; 
+background:#48226C; 
+ 
+
+}
+
+h3 {
+margin-top: 10px;
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+
+}
+
+
+.title1 {
+margin-top: 20px;
+color:#fff ;
+letter-spacing: -3px;
+
+}
+.titulos{
+	grid-column: 2/6;
+	background:#48226C; 
+	text-align: center;
+	font-family: times;
+	line-height: -40px;
+    height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	margin-right: 60px;
+
+
+}
+
+
+
+.logo{
+	width: 30px;
+	height: 100px;
+}
+
+.menu_completo{
+
+	height: 200px;
+}
+
+/*botoens blanco del menu---------*/
+ 
+.menu .font_a:hover{
+
+color: #fff;
+
+}
+
+.menu .icono:hover {
+	color: #16F2E0;
+
+}
+
+
+
+
+
+
+
+.menu .font_a{
+	color:#16F2E0;
+	font-size: 20px;
+	line-height: 63px;
+	margin-right: 13px;
+	cursor: pointer;
+  
+
+	}
+
+.menu a {
+	color: #fff;
+	font-size: 15px;
+	line-height: 60px; 
+	text-transform: uppercase;
+	cursor: pointer;
+	
+}
+
+/*----------------------------------*/
+.iconos{
+	display: flex;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*main central*/
+
+.medio {
+	height: 303px;
+	width: 100%;
+	background: url(imagenes/fuego6.gif);
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+}
+	
+	
+
+
+h2 {
+	
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: times;
+
+}
+
+
+
+
+
+
+/*-----------------*/
+
+
+/*FOOTER -------------*/
+.ultimo{
+width: 100%;
+height: 200px;
+display: grid;
+grid-template-rows: 100px 100px;
+text-align: center;
+background: #6A3A96;
+border-top: solid 5px #48226C;
+border-bottom: solid 10px black; 
+
+}
+
+.footer_1 {
+	text-align: center;
+	align-self: center;
+	color: #fff;
+	
+	}
+
+
+.footer_2{
+     color: #fff;
+	font-family: times;
+	text-align: center;
+	align-self: center;
+
+}
+
+.footer_2 .ultimo_p {
+	font-size: 20px;
+}
+
+h4{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+
+
+.typed {
+	font-weight: bold;
+	color: #16F2E0;
+	font-style: normal;
+}
+
+/*Media screen and----------------------------*/
+@media screen and (min-width:860px){
+
+.menu_container{
+	display: flex;
+
+
+
+
+	
+
+}
+
+.menu_container a{
+	margin: 5px;
+
+	
+}
+
+
+
+
+	/*checked de menus*/
+
+ .input1:checked + .menu_container{
+
+ 	display:flex;
+
+
+	 
+
+ 	
+ }
+
+
+
+ .input_home:checked + .caja_inicio{
+	display: flex;
+	
+}
+
+.input_servicio:checked + .caja_servicio{
+
+	display: flex;
+	
+}
+
+
+.input_portafolio:checked + .caja_portafolio{
+
+	display: flex;
+}
+
+.input_contacto:checked + .caja_contacto {
+	display: flex;
+}
+
+	/*------------------------------*/
+
+.input1, .input_home, .input_servicio, .input_portafolio, .input_contacto{
+	display: none;
+
+}
+
+.font_a {
+	display: none;
+	
+
+}
+
+
+
+/*principal- header-----grid--------*/
+
+.principal{
+ width: 100%;
+ height: 110px;
+ display:flex;
+ justify-content: space-between;
+ background: #48226C;
+ display: grid;
+ grid-template-columns: repeat(6, 100px);
+ grid-template-rows: repeat(3, 1fr);
+
+ align-items:center;
+
+}
+
+
+
+
+.logo{
+grid-column: 1/2;
+
+grid-row: 1/3;
+height: 110px;
+
+}
+
+.titulos{
+	
+	
+	text-align: center;
+	align-self: center;
+	font-family: times;
+	
+  width: 350px;
+  grid-row: 1;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  height: 110px;
+  
+
+
+	
+	}
+
+
+.menu_completo{
+	
+	grid-column: 4/7;
+	grid-row: auto;
+	width: 350px;
+	height: 110px;
+	
+}
+
+
+
+
+
+.menu a {
+	color: #fff;
+	cursor: pointer;
+	margin: 10px;
+	margin-top: 30px;
+
+}
+
+/*final de las cajas de grid en la parte del header*/
+
+
+h3 {
+
+color: #fff;
+font-size: 25px;
+
+}
+
+h1 {
+
+color:#fff ;
+font-size: 33px;
+}
+
+img{
+	width: 130px;
+	height: 110px;
+}
+
+
+.menu .font_a:hover{
+
+color: #fff;
+
+}
+
+.menu .icono:hover {
+	color: #16F2E0;
+
+}
+
+
+
+
+.menu .font_a{
+	color:#16F2E0;
+	font-size: 20px;
+	cursor: pointer;
+  
+
+	}
+
+.menu a {
+	color: #fff;
+	cursor: pointer;
+	margin: 10px;
+	margin-top: 30px;
+
+}
+
+
+
+.ultimo{
+width: 100%;
+height: 200px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+text-align: center;
+background: #6A3A96;
+border-top: solid 5px #48226C;
+border-bottom: solid 10px black; 
+
+
+}
+
+.footer_1 {
+	text-align: center;
+	align-items: center;
+	color: #fff;
+	grid-row: 1/3;
+	
+	}
+
+
+.footer_2{
+     color: #fff;
+	font-family: times;
+	text-align: center;
+	align-items: :center;
+	display: flex;
+	flex-direction: column;
+	grid-row: 1/3;
+
+}
+
+
+
+
+}
+
+
+.title h1{
+	color: #fff
+}
+
+
+/*----------------------------------*/
